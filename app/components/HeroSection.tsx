@@ -6,11 +6,11 @@ export default function HeroSection() {
     <section className="relative z-10 mx-auto flex h-[85vh] min-h-[85vh] lg:h-auto lg:min-h-[calc(100vh-64px)] max-w-[var(--container-max)] flex-col lg:flex-row items-center justify-center lg:justify-start gap-12 lg:gap-8 px-4 sm:px-[var(--spacing-gutter)] md:px-10">
       <div className="relative z-10 flex flex-col items-center text-center lg:items-start lg:text-left gap-6 w-full lg:w-7/12">
         <h1 className="font-geist text-4xl font-semibold leading-tight tracking-tight text-on-surface sm:text-5xl lg:text-6xl">
-          The AI Voice Engagement <br className="hidden lg:block" />
+          Erlang Labs AI Voice <br className="hidden lg:block" />
           Platform.
         </h1>
         <p className="max-w-2xl font-inter text-base leading-relaxed text-secondary sm:text-lg">
-          Deploy intelligent voice agents that automatically reach people over phone calls, hold natural conversations, deliver information, and return structured outcomes at scale.
+          Erlang Labs helps enterprises deploy intelligent voice agents that automatically reach people over phone calls, hold natural conversations, deliver information, and return structured outcomes at scale.
         </p>
         <div className="mt-2 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center justify-center lg:justify-start">
           <Link href="/early-access" className="btn-primary w-full text-center sm:w-auto">

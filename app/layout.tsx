@@ -24,22 +24,22 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.erlanglabs.com"),
   title: {
-    default: "ErlangLabs | AI Voice Engagement Platform",
-    template: "%s | ErlangLabs",
+    default: "Erlang Labs | AI Voice Engagement Platform",
+    template: "%s | Erlang Labs",
   },
-  description: "The Voice Infrastructure for Enterprise AI. Deploy intelligent voice agents that sound human and reason like software. Automate outbound and inbound calls seamlessly.",
-  keywords: ["AI Voice", "Enterprise AI", "Voice Agents", "Voice AI", "ErlangLabs", "AI Infrastructure", "Conversational AI", "Outbound Automation", "Inbound Automation", "AI Caller"],
-  authors: [{ name: "ErlangLabs", url: "https://www.erlanglabs.com" }],
-  creator: "ErlangLabs",
-  publisher: "ErlangLabs",
+  description: "Erlang Labs builds enterprise AI voice infrastructure for outbound and inbound calling, automated conversations, and structured data extraction at scale.",
+  keywords: ["Erlang Labs", "ErlangLabs", "AI Voice", "Enterprise AI", "Voice Agents", "Voice AI", "AI Infrastructure", "Conversational AI", "Outbound Automation", "Inbound Automation", "AI Caller"],
+  authors: [{ name: "Erlang Labs", url: "https://www.erlanglabs.com" }],
+  creator: "Erlang Labs",
+  publisher: "Erlang Labs",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "ErlangLabs | AI Voice Engagement Platform",
-    description: "The Voice Infrastructure for Enterprise AI. Deploy intelligent voice agents that sound human and reason like software. Automate outbound and inbound calls seamlessly.",
+    title: "Erlang Labs | AI Voice Engagement Platform",
+    description: "Erlang Labs builds enterprise AI voice infrastructure for outbound and inbound calling, automated conversations, and structured data extraction at scale.",
     url: "https://www.erlanglabs.com",
-    siteName: "ErlangLabs",
+    siteName: "Erlang Labs",
     locale: "en_US",
     type: "website",
     images: [
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@erlanglabs",
     creator: "@erlanglabs",
-    title: "ErlangLabs | AI Voice Engagement Platform",
-    description: "The Voice Infrastructure for Enterprise AI. Deploy intelligent voice agents that sound human and reason like software.",
+    title: "Erlang Labs | AI Voice Engagement Platform",
+    description: "Erlang Labs builds enterprise AI voice infrastructure for outbound and inbound calling, automated conversations, and structured data extraction at scale.",
     images: ["https://www.erlanglabs.com/opengraph-image"],
   },
   robots: {
