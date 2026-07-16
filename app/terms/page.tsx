@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "Terms and Conditions | ErlangLabs",
   description: "Terms of service and acceptable use policy for ErlangLabs. Read our guidelines for using our enterprise AI voice platform.",
   alternates: {
-    canonical: "https://erlanglabs.com/terms",
+    canonical: "https://www.erlanglabs.com/terms",
   },
   openGraph: {
     title: "Terms and Conditions | ErlangLabs",
     description: "Terms of service and acceptable use policy for ErlangLabs. Read our guidelines for using our enterprise AI voice platform.",
-    url: "https://erlanglabs.com/terms",
+    url: "https://www.erlanglabs.com/terms",
     siteName: "ErlangLabs",
     locale: "en_US",
     type: "website",

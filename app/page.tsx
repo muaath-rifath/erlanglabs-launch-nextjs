@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "ErlangLabs | Enterprise AI Voice Agents",
   description: "Deploy intelligent AI voice agents that automate outbound dialing, handle inbound calls, and extract structured data seamlessly for your enterprise.",
   alternates: {
-    canonical: "https://erlanglabs.com",
+    canonical: "https://www.erlanglabs.com",
   }
 };
 

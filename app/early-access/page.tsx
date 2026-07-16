@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Get Early Access | ErlangLabs",
   description: "Join the ErlangLabs early access waitlist to deploy enterprise AI voice agents. Automate your customer engagement with our cutting-edge voice infrastructure.",
   alternates: {
-    canonical: "https://erlanglabs.com/early-access",
+    canonical: "https://www.erlanglabs.com/early-access",
   },
   openGraph: {
     title: "Get Early Access | ErlangLabs",
     description: "Join the ErlangLabs early access waitlist to deploy enterprise AI voice agents. Automate your customer engagement with our cutting-edge voice infrastructure.",
-    url: "https://erlanglabs.com/early-access",
+    url: "https://www.erlanglabs.com/early-access",
     siteName: "ErlangLabs",
     locale: "en_US",
     type: "website",

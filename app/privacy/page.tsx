@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "Privacy Policy | ErlangLabs",
   description: "Privacy policy and data handling practices for ErlangLabs. Learn how we protect and manage your enterprise data.",
   alternates: {
-    canonical: "https://erlanglabs.com/privacy",
+    canonical: "https://www.erlanglabs.com/privacy",
   },
   openGraph: {
     title: "Privacy Policy | ErlangLabs",
     description: "Privacy policy and data handling practices for ErlangLabs. Learn how we protect and manage your enterprise data.",
-    url: "https://erlanglabs.com/privacy",
+    url: "https://www.erlanglabs.com/privacy",
     siteName: "ErlangLabs",
     locale: "en_US",
     type: "website",

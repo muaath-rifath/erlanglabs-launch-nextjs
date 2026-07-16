@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://erlanglabs.com/sitemap.xml',
+    sitemap: 'https://www.erlanglabs.com/sitemap.xml',
   };
 }

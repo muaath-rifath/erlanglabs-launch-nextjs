@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Contact Us | ErlangLabs",
   description: "Get in touch with the ErlangLabs team to discuss your enterprise AI voice needs, schedule a demo, or explore deployment options.",
   alternates: {
-    canonical: "https://erlanglabs.com/contact",
+    canonical: "https://www.erlanglabs.com/contact",
   },
   openGraph: {
     title: "Contact Us | ErlangLabs",
     description: "Get in touch with the ErlangLabs team to discuss your enterprise AI voice needs, schedule a demo, or explore deployment options.",
-    url: "https://erlanglabs.com/contact",
+    url: "https://www.erlanglabs.com/contact",
     siteName: "ErlangLabs",
     locale: "en_US",
     type: "website",

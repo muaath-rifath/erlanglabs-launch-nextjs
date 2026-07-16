@@ -22,14 +22,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://erlanglabs.com"),
+  metadataBase: new URL("https://www.erlanglabs.com"),
   title: {
     default: "ErlangLabs | AI Voice Engagement Platform",
     template: "%s | ErlangLabs",
   },
   description: "The Voice Infrastructure for Enterprise AI. Deploy intelligent voice agents that sound human and reason like software. Automate outbound and inbound calls seamlessly.",
   keywords: ["AI Voice", "Enterprise AI", "Voice Agents", "Voice AI", "ErlangLabs", "AI Infrastructure", "Conversational AI", "Outbound Automation", "Inbound Automation", "AI Caller"],
-  authors: [{ name: "ErlangLabs", url: "https://erlanglabs.com" }],
+  authors: [{ name: "ErlangLabs", url: "https://www.erlanglabs.com" }],
   creator: "ErlangLabs",
   publisher: "ErlangLabs",
   alternates: {
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ErlangLabs | AI Voice Engagement Platform",
     description: "The Voice Infrastructure for Enterprise AI. Deploy intelligent voice agents that sound human and reason like software. Automate outbound and inbound calls seamlessly.",
-    url: "https://erlanglabs.com",
+    url: "https://www.erlanglabs.com",
     siteName: "ErlangLabs",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://erlanglabs.com/opengraph-image",
-        secureUrl: "https://erlanglabs.com/opengraph-image",
+        url: "https://www.erlanglabs.com/opengraph-image",
+        secureUrl: "https://www.erlanglabs.com/opengraph-image",
         width: 1200,
         height: 630,
         alt: "ErlangLabs - Enterprise AI Voice Agents",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     creator: "@erlanglabs",
     title: "ErlangLabs | AI Voice Engagement Platform",
     description: "The Voice Infrastructure for Enterprise AI. Deploy intelligent voice agents that sound human and reason like software.",
-    images: ["https://erlanglabs.com/opengraph-image"],
+    images: ["https://www.erlanglabs.com/opengraph-image"],
   },
   robots: {
     index: true,
