@@ -44,14 +44,14 @@ export default function TermsPage() {
             <section className="flex flex-col gap-4">
               <h2 className="font-geist text-2xl font-semibold text-on-surface">1. Acceptance of Terms</h2>
               <p>
-                By accessing and using the ErlangLabs platform, website, and associated APIs (the "Services"), you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these terms, please do not use our Services.
+                By accessing and using the ErlangLabs platform, website, and associated APIs (the &quot;Services&quot;), you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these terms, please do not use our Services.
               </p>
             </section>
 
             <section className="flex flex-col gap-4">
               <h2 className="font-geist text-2xl font-semibold text-on-surface">2. Description of Service</h2>
               <p>
-                ErlangLabs provides an enterprise voice infrastructure platform that allows users to deploy AI voice agents for automated outbound and inbound calling, data extraction, and campaign management. The Services are provided "as is" and "as available".
+                ErlangLabs provides an enterprise voice infrastructure platform that allows users to deploy AI voice agents for automated outbound and inbound calling, data extraction, and campaign management. The Services are provided &quot;as is&quot; and &quot;as available&quot;.
               </p>
             </section>
 

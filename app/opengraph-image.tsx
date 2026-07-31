@@ -4,7 +4,7 @@ import { join } from 'path';
 
 export const runtime = 'nodejs';
 
-export const alt = 'ErlangLabs - Enterprise AI Voice Agents';
+export const alt = 'ErlangLabs - AI Voice Agents for Business';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -117,7 +117,7 @@ export default async function Image() {
             fontFamily: 'Montserrat',
             display: 'flex',
           }}>
-            The Voice Infrastructure for Enterprise AI.
+            AI voice agents for business conversations.
           </div>
 
           <div style={{

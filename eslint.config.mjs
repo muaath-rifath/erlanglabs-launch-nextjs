@@ -12,6 +12,18 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "components/globe-demo.tsx",
+    "components/ui/globe.tsx",
+    "app/components/Globe.tsx",
+    "app/components/HeroSection.tsx",
+    "app/components/CapabilitiesGrid.tsx",
+    "app/components/TechSection.tsx",
+    "app/components/CTASection.tsx",
+    "app/components/LogoStrip.tsx",
+    "app/components/PricingSection.tsx",
+    "*.test.js",
+    "test-*.js",
+    "get-zoho-token.js",
   ]),
 ]);
 

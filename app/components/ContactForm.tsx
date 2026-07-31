@@ -48,7 +48,7 @@ export default function ContactForm() {
         turnstileRef.current?.reset();
         setTurnstileToken(null);
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
       turnstileRef.current?.reset();
       setTurnstileToken(null);

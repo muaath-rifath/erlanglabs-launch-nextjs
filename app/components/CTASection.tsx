@@ -6,18 +6,18 @@ export default function CTASection() {
       <div className="relative">
         <div className="absolute -inset-4 rounded-full bg-primary-container/10 blur-3xl"></div>
         <h2 className="relative font-geist text-4xl font-bold leading-tight tracking-tighter text-on-surface sm:text-5xl">
-          Ready to launch your voice campaigns?
+          Ready to deploy your first voice agent?
         </h2>
       </div>
       <p className="font-inter text-base font-medium leading-relaxed text-secondary sm:text-lg">
-        Create intelligent agents, upload your contacts, and start automating your outreach with the ultimate AI voice engagement platform.
+        Build a persona, attach your knowledge base, import contacts, and go live in minutes.
       </p>
       <div className="mt-2 flex flex-col gap-4 sm:flex-row">
         <Link href="/early-access" className="btn-primary w-full px-8 py-4 sm:w-auto">
           Get Early Access
         </Link>
-        <Link href="#features" className="btn-secondary w-full px-8 py-4 sm:w-auto">
-          Explore Features
+        <Link href="/contact" className="btn-secondary w-full px-8 py-4 sm:w-auto">
+          Talk to the team
         </Link>
       </div>
     </section>

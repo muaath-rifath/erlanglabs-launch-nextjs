@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Inter, JetBrains_Mono, Figtree } from "next/font/google";
+import { Geist, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import InteractiveBackground from "./components/InteractiveBackground";
 import { cn } from "@/lib/utils";
 
-const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -23,23 +16,20 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.erlanglabs.com"),
-  title: {
-    default: "Erlang Labs | AI Voice Engagement Platform",
-    template: "%s | Erlang Labs",
-  },
-  description: "Erlang Labs builds enterprise AI voice infrastructure for outbound and inbound calling, automated conversations, and structured data extraction at scale.",
-  keywords: ["Erlang Labs", "ErlangLabs", "AI Voice", "Enterprise AI", "Voice Agents", "Voice AI", "AI Infrastructure", "Conversational AI", "Outbound Automation", "Inbound Automation", "AI Caller"],
-  authors: [{ name: "Erlang Labs", url: "https://www.erlanglabs.com" }],
-  creator: "Erlang Labs",
-  publisher: "Erlang Labs",
+  title: { default: "ErlangLabs | AI Voice Agents for Business", template: "%s | ErlangLabs" },
+  description: "ErlangLabs is a global AI calling platform for contextual inbound and outbound voice agents, structured outcomes, and business phone workflows.",
+  keywords: ["ErlangLabs", "AI voice agents", "AI calling platform", "voice automation", "AI phone calls", "structured call outcomes"],
+  authors: [{ name: "ErlangLabs", url: "https://www.erlanglabs.com" }],
+  creator: "ErlangLabs",
+  publisher: "ErlangLabs",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Erlang Labs | AI Voice Engagement Platform",
-    description: "Erlang Labs builds enterprise AI voice infrastructure for outbound and inbound calling, automated conversations, and structured data extraction at scale.",
+    title: "ErlangLabs | AI Voice Agents for Business",
+    description: "Deploy contextual voice agents for inbound and outbound business calls.",
     url: "https://www.erlanglabs.com",
-    siteName: "Erlang Labs",
+    siteName: "ErlangLabs",
     locale: "en_US",
     type: "website",
     images: [
@@ -57,8 +47,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@erlanglabs",
     creator: "@erlanglabs",
-    title: "Erlang Labs | AI Voice Engagement Platform",
-    description: "Erlang Labs builds enterprise AI voice infrastructure for outbound and inbound calling, automated conversations, and structured data extraction at scale.",
+    title: "ErlangLabs | AI Voice Agents for Business",
+    description: "Deploy contextual voice agents for inbound and outbound business calls.",
     images: ["https://www.erlanglabs.com/opengraph-image"],
   },
   robots: {
@@ -82,10 +72,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", geistSans.variable, inter.variable, jetbrainsMono.variable, "font-sans", figtree.variable)}
+      className={cn("h-full", "antialiased", geistSans.variable, jetbrainsMono.variable, "font-sans")}
       data-scroll-behavior="smooth"
     >
-      <body className="min-h-full flex flex-col overflow-x-clip">
+      <body className="min-h-full flex flex-col overflow-x-clip bg-background text-foreground selection:bg-primary/30 selection:text-primary">
         <InteractiveBackground />
         {children}
       </body>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import LogoStrip from "./components/LogoStrip";
@@ -5,36 +6,32 @@ import CapabilitiesGrid from "./components/CapabilitiesGrid";
 import TechSection from "./components/TechSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
-import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AI Voice Agents for Business Conversations | ErlangLabs",
+  description:
+    "ErlangLabs is a global AI calling platform for contextual inbound and outbound voice agents, structured outcomes, and business phone workflows.",
+  alternates: { canonical: "https://www.erlanglabs.com" },
+};
 
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
-      name: "Erlang Labs",
+      name: "ErlangLabs",
       url: "https://www.erlanglabs.com",
       logo: "https://www.erlanglabs.com/opengraph-image",
     },
     {
-      "@type": "WebSite",
-      name: "Erlang Labs",
-      url: "https://www.erlanglabs.com",
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://www.erlanglabs.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
+      "@type": "SoftwareApplication",
+      name: "ErlangLabs",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Cloud",
+      description:
+        "AI voice agents for inbound and outbound business phone conversations.",
     },
   ],
-};
-
-export const metadata: Metadata = {
-  title: "Erlang Labs | Enterprise AI Voice Agents",
-  description: "Erlang Labs builds enterprise AI voice agents that automate outbound dialing, handle inbound calls, and extract structured data seamlessly.",
-  alternates: {
-    canonical: "https://www.erlanglabs.com",
-  }
 };
 
 export default function Home() {

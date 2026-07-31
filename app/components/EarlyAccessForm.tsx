@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
+import Link from 'next/link';
 import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 
 export default function EarlyAccessForm() {
@@ -72,8 +73,8 @@ export default function EarlyAccessForm() {
         <div className="mb-3 flex justify-center">
           <span className="text-4xl" aria-hidden="true">🎉</span>
         </div>
-        <h2 className="mb-2 font-geist text-xl font-semibold text-on-surface">You're on the waitlist!</h2>
-        <p className="font-inter text-base text-secondary">We'll be in touch soon. Stay tuned!</p>
+        <h2 className="mb-2 font-geist text-xl font-semibold text-on-surface">You&apos;re on the waitlist!</h2>
+        <p className="font-inter text-base text-secondary">We&apos;ll be in touch soon. Stay tuned!</p>
       </div>
     );
   }
@@ -84,11 +85,11 @@ export default function EarlyAccessForm() {
         <div className="mb-3 flex justify-center">
           <span className="text-4xl" aria-hidden="true">✉️</span>
         </div>
-        <h2 className="mb-2 font-geist text-xl font-semibold text-on-surface">You're already on the list!</h2>
+        <h2 className="mb-2 font-geist text-xl font-semibold text-on-surface">You&apos;re already on the list!</h2>
         <p className="mb-6 font-inter text-base text-secondary">
-          We already have your email on the ErlangLabs waitlist. We'll reach out when access is ready — stay tuned!
+          We already have your email on the ErlangLabs waitlist. We&apos;ll reach out when access is ready — stay tuned!
         </p>
-        <a
+        <Link
           href="/"
           className="btn-secondary inline-flex items-center gap-2"
         >
@@ -96,7 +97,7 @@ export default function EarlyAccessForm() {
             <path d="M19 12H5M12 5l-7 7 7 7"/>
           </svg>
           Back to Home
-        </a>
+        </Link>
       </div>
     );
   }

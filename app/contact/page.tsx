@@ -6,13 +6,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us | ErlangLabs",
-  description: "Get in touch with the ErlangLabs team to discuss your enterprise AI voice needs, schedule a demo, or explore deployment options.",
+  description: "Contact the ErlangLabs team about AI voice agents, Agent Studio, and early business calling workflows.",
   alternates: {
     canonical: "https://www.erlanglabs.com/contact",
   },
   openGraph: {
     title: "Contact Us | ErlangLabs",
-    description: "Get in touch with the ErlangLabs team to discuss your enterprise AI voice needs, schedule a demo, or explore deployment options.",
+    description: "Contact ErlangLabs about AI voice agents and business calling workflows.",
     url: "https://www.erlanglabs.com/contact",
     siteName: "ErlangLabs",
     locale: "en_US",
@@ -30,21 +30,15 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 lg:py-24 sm:px-[var(--spacing-gutter)] md:px-10">
-        <div className="w-full max-w-2xl">
-          <div className="mb-12 text-center">
-            <h1 className="mb-4 font-geist text-4xl font-bold tracking-tight text-on-surface sm:text-5xl">
-              Get in Touch
-            </h1>
-            <p className="font-inter text-lg text-secondary">
-              Interested in deploying enterprise-grade AI voice agents? Our team is ready to help you build the perfect communication infrastructure.
-            </p>
-            <p className="mt-4 font-inter text-base text-secondary">
-              Or email us directly at <a href="mailto:contact@erlanglabs.com" className="text-primary-container hover:underline">contact@erlanglabs.com</a>
-            </p>
+      <main className="flex-1">
+        <div className="site-shell grid gap-12 py-20 lg:grid-cols-[.72fr_1.28fr] lg:items-start lg:py-28">
+          <div className="max-w-lg lg:sticky lg:top-28">
+            <h1 className="page-title mt-5">Let&apos;s talk about the workflow.</h1>
+            <p className="mt-6 text-base leading-7 text-secondary">Tell us what you want to automate over the phone, or email us directly at <a href="mailto:contact@erlanglabs.com" className="text-on-surface underline decoration-primary/50 underline-offset-4 hover:decoration-primary">contact@erlanglabs.com</a>.</p>
+            <div className="mt-9 border-t border-surface-border pt-6"><p className="data-label">Pre-launch conversations</p><p className="mt-3 text-sm leading-6 text-secondary">We are especially interested in teams with a specific calling workflow they want to make more useful.</p></div>
           </div>
 
-          <div className="bento-card p-8 sm:p-10">
+          <div className="form-shell p-6 sm:p-9">
             <ContactForm />
           </div>
         </div>
@@ -53,3 +47,5 @@ export default function ContactPage() {
     </>
   );
 }
+
+

@@ -3,39 +3,30 @@ import Globe from "./Globe";
 
 export default function HeroSection() {
   return (
-    <section className="relative z-10 mx-auto flex h-[85vh] min-h-[85vh] lg:h-auto lg:min-h-[calc(100vh-64px)] max-w-[var(--container-max)] flex-col lg:flex-row items-center justify-center lg:justify-start gap-12 lg:gap-8 px-4 sm:px-[var(--spacing-gutter)] md:px-10">
-      <div className="relative z-10 flex flex-col items-center text-center lg:items-start lg:text-left gap-6 w-full lg:w-7/12">
-        <h1 className="font-geist text-4xl font-semibold leading-tight tracking-tight text-on-surface sm:text-5xl lg:text-6xl">
-          Erlang Labs AI Voice <br className="hidden lg:block" />
-          Platform.
+    <section className="relative z-10 mx-auto flex h-[85vh] min-h-[85vh] max-w-[var(--container-max)] flex-col items-center justify-center gap-12 px-4 sm:px-[var(--spacing-gutter)] md:px-10 lg:h-auto lg:min-h-[calc(100vh-73px)] lg:flex-row lg:justify-start lg:gap-8">
+      <div className="relative z-10 flex w-full flex-col items-center gap-6 text-center lg:w-7/12 lg:items-start lg:text-left">
+        <h1 className="font-geist text-4xl font-semibold leading-[.98] tracking-[-.055em] text-on-surface sm:text-5xl lg:text-6xl">
+          AI voice agents for<br className="hidden lg:block" /> business calls.
         </h1>
         <p className="max-w-2xl font-inter text-base leading-relaxed text-secondary sm:text-lg">
-          Erlang Labs helps enterprises deploy intelligent voice agents that automatically reach people over phone calls, hold natural conversations, deliver information, and return structured outcomes at scale.
+          ErlangLabs turns business context into natural phone conversations and clear, structured outcomes—for teams working across markets, time zones, and workflows.
         </p>
-        <div className="mt-2 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center justify-center lg:justify-start">
+        <div className="mt-2 flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row sm:items-center lg:justify-start">
           <Link href="/early-access" className="btn-primary w-full text-center sm:w-auto">
-            Get Early Access
+            Get early access <span aria-hidden="true" className="ml-1">↗</span>
           </Link>
-          <Link href="#features" className="btn-secondary w-full sm:w-auto">
-            Explore Features
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+          <Link href="/agent-studio" className="btn-secondary w-full sm:w-auto">
+            Explore Agent Studio <span aria-hidden="true" className="ml-1">→</span>
           </Link>
         </div>
       </div>
-      
-      {/* Globe Container - Absolute positioning with top-0 bottom-0 my-auto avoids min-height percentage bugs and locks to far right */}
-      <div className="hidden relative mt-12 lg:mt-0 w-full lg:absolute lg:top-0 lg:bottom-0 lg:my-auto lg:right-0 xl:-right-10 lg:flex items-center justify-center pointer-events-none z-0 
-        aspect-square lg:w-[500px] xl:w-[600px] max-w-[400px] md:max-w-[500px] lg:max-w-none 
-        lg:h-[500px] xl:h-[600px] mx-auto lg:mx-0 lg:translate-y-8">
-        {/* Glow effect behind the globe */}
-        <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-container/20 to-primary/0 blur-3xl scale-90"></div>
-        
-        <div className="relative w-full h-full">
-          <Globe />
-        </div>
+
+      <div className="pointer-events-none relative mt-12 hidden aspect-square w-full max-w-[400px] items-center justify-center lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:my-auto lg:mt-0 lg:flex lg:h-[500px] lg:w-[500px] lg:max-w-none lg:translate-y-8 xl:-right-10 xl:h-[600px] xl:w-[600px]">
+        <div className="absolute inset-0 scale-90 rounded-full bg-gradient-to-tr from-primary-container/20 to-primary/0 blur-3xl" />
+        <div className="relative h-full w-full"><Globe /></div>
       </div>
     </section>
   );
 }
+
+
