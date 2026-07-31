@@ -8,9 +8,9 @@ import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI Voice Agents for Business Conversations | ErlangLabs",
+  title: "AI Voice Agents for Business Conversations | Erlang Labs",
   description:
-    "ErlangLabs is a global AI calling platform for contextual inbound and outbound voice agents, structured outcomes, and business phone workflows.",
+    "Erlang Labs is a global AI calling platform for contextual inbound and outbound voice agents, structured outcomes, and business phone workflows.",
   alternates: { canonical: "https://www.erlanglabs.com" },
 };
 
@@ -19,13 +19,13 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Organization",
-      name: "ErlangLabs",
+      name: "Erlang Labs",
       url: "https://www.erlanglabs.com",
       logo: "https://www.erlanglabs.com/opengraph-image",
     },
     {
       "@type": "SoftwareApplication",
-      name: "ErlangLabs",
+      name: "Erlang Labs",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Cloud",
       description:

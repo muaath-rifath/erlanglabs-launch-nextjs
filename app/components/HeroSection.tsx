@@ -9,7 +9,7 @@ export default function HeroSection() {
           AI voice agents for<br className="hidden lg:block" /> business calls.
         </h1>
         <p className="max-w-2xl font-inter text-base leading-relaxed text-secondary sm:text-lg">
-          ErlangLabs turns business context into natural phone conversations and clear, structured outcomes—for teams working across markets, time zones, and workflows.
+          Erlang Labs turns business context into natural phone conversations and clear, structured outcomes—for teams working across markets, time zones, and workflows.
         </p>
         <div className="mt-2 flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row sm:items-center lg:justify-start">
           <Link href="/early-access" className="btn-primary w-full text-center sm:w-auto">
@@ -28,5 +28,4 @@ export default function HeroSection() {
     </section>
   );
 }
-
 

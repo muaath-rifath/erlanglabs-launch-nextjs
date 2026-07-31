@@ -61,7 +61,7 @@ export default function CapabilitiesGrid() {
           Voice automation for any workflow.
         </motion.h2>
         <motion.p variants={itemVariants} className="max-w-3xl font-inter text-lg font-medium leading-relaxed text-secondary sm:text-xl">
-          Build AI personas, connect your knowledge base, upload your contacts, and press play. ErlangLabs handles outbound dialing, live conversation, and structured data extraction automatically.
+          Build AI personas, connect your knowledge base, upload your contacts, and press play. Erlang Labs handles outbound dialing, live conversation, and structured data extraction automatically.
         </motion.p>
       </motion.div>
       
@@ -220,7 +220,7 @@ export default function CapabilitiesGrid() {
             </div>
             <h3 className="mb-3 font-geist text-2xl font-semibold tracking-tight text-on-surface">Structured Data Extraction</h3>
             <p className="font-inter text-base leading-relaxed text-secondary pr-4">
-              Stop listening to call recordings. ErlangLabs automatically extracts precise, structured insights from every conversation and syncs them directly into your database, CRM, or custom endpoints.
+              Stop listening to call recordings. Erlang Labs automatically extracts precise, structured insights from every conversation and syncs them directly into your database, CRM, or custom endpoints.
             </p>
           </div>
           <div className="flex h-48 w-full md:flex-1 items-center justify-center bento-inner-card relative z-10 bg-surface/50">

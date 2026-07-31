@@ -87,7 +87,7 @@ export default function EarlyAccessForm() {
         </div>
         <h2 className="mb-2 font-geist text-xl font-semibold text-on-surface">You&apos;re already on the list!</h2>
         <p className="mb-6 font-inter text-base text-secondary">
-          We already have your email on the ErlangLabs waitlist. We&apos;ll reach out when access is ready — stay tuned!
+          We already have your email on the Erlang Labs waitlist. We&apos;ll reach out when access is ready — stay tuned!
         </p>
         <Link
           href="/"

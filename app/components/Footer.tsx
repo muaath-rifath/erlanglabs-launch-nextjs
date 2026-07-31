@@ -12,7 +12,7 @@ export default function Footer() {
             Contextual AI voice agents for business conversations and structured outcomes.
           </p>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-[.1em] text-muted">
-            © {new Date().getFullYear()} ErlangLabs · Pre-launch
+            © {new Date().getFullYear()} Erlang Labs · Pre-launch
           </p>
         </div>
 

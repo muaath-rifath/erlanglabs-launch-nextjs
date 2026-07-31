@@ -5,24 +5,24 @@ import EarlyAccessForm from "../components/EarlyAccessForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Get Early Access | ErlangLabs",
-  description: "Join the ErlangLabs early access list for a global AI voice-agent platform that turns business phone conversations into structured outcomes.",
+  title: "Get Early Access | Erlang Labs",
+  description: "Join the Erlang Labs early access list for a global AI voice-agent platform that turns business phone conversations into structured outcomes.",
   alternates: {
     canonical: "https://www.erlanglabs.com/early-access",
   },
   openGraph: {
-    title: "Get Early Access | ErlangLabs",
-    description: "Join the early access list for ErlangLabs AI voice agents.",
+    title: "Get Early Access | Erlang Labs",
+    description: "Join the early access list for Erlang Labs AI voice agents.",
     url: "https://www.erlanglabs.com/early-access",
-    siteName: "ErlangLabs",
+    siteName: "Erlang Labs",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@erlanglabs",
-    title: "Get Early Access | ErlangLabs",
-    description: "Join the ErlangLabs early access waitlist to deploy enterprise AI voice agents.",
+    title: "Get Early Access | Erlang Labs",
+    description: "Join the Erlang Labs early access waitlist to deploy enterprise AI voice agents.",
   },
 };
 
@@ -47,5 +47,3 @@ export default function EarlyAccessPage() {
     </>
   );
 }
-
-

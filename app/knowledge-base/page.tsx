@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
 
-export const metadata: Metadata = { title: "Knowledge Base for AI Voice Agents | ErlangLabs", description: "Give ErlangLabs voice agents trusted policies, product details, and playbooks so they can answer customer questions with the right business context.", alternates: { canonical: "https://www.erlanglabs.com/knowledge-base" } };
+export const metadata: Metadata = { title: "Knowledge Base for AI Voice Agents | Erlang Labs", description: "Give Erlang Labs voice agents trusted policies, product details, and playbooks so they can answer customer questions with the right business context.", alternates: { canonical: "https://www.erlanglabs.com/knowledge-base" } };
 
 const documents = [["Product overview.pdf", "Product positioning and use cases", "PDF"], ["Objection guide.docx", "Approved answers for common concerns", "DOC"], ["Plans and packaging.xlsx", "Current packages and terms", "XLS"], ["Sales notes.txt", "Team notes and qualification guidance", "TXT"]] as const;
 

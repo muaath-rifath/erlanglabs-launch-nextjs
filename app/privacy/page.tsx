@@ -4,24 +4,24 @@ import Footer from "../components/Footer";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ErlangLabs",
-  description: "Privacy policy and data handling practices for ErlangLabs. Learn how we protect and manage your enterprise data.",
+  title: "Privacy Policy | Erlang Labs",
+  description: "Privacy policy and data handling practices for Erlang Labs. Learn how we protect and manage your enterprise data.",
   alternates: {
     canonical: "https://www.erlanglabs.com/privacy",
   },
   openGraph: {
-    title: "Privacy Policy | ErlangLabs",
-    description: "Privacy policy and data handling practices for ErlangLabs. Learn how we protect and manage your enterprise data.",
+    title: "Privacy Policy | Erlang Labs",
+    description: "Privacy policy and data handling practices for Erlang Labs. Learn how we protect and manage your enterprise data.",
     url: "https://www.erlanglabs.com/privacy",
-    siteName: "ErlangLabs",
+    siteName: "Erlang Labs",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary",
     site: "@erlanglabs",
-    title: "Privacy Policy | ErlangLabs",
-    description: "Privacy policy and data handling practices for ErlangLabs.",
+    title: "Privacy Policy | Erlang Labs",
+    description: "Privacy policy and data handling practices for Erlang Labs.",
   },
 };
 
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
             <section className="flex flex-col gap-4">
               <h2 className="font-geist text-2xl font-semibold text-on-surface">1. Information We Collect</h2>
               <p>
-                At ErlangLabs, we collect information that you provide directly to us when you create an account, use our AI voice engagement platform, or communicate with us. This may include your name, email address, company details, billing information, and the contact lists or data schemas you upload for campaigns.
+                At Erlang Labs, we collect information that you provide directly to us when you create an account, use our AI voice engagement platform, or communicate with us. This may include your name, email address, company details, billing information, and the contact lists or data schemas you upload for campaigns.
               </p>
               <p>
                 We also automatically collect certain information about your device and usage of our services, including IP addresses, browser types, and log data related to call metrics and agent performance.
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
             <section className="flex flex-col gap-4">
               <h2 className="font-geist text-2xl font-semibold text-on-surface">2. How We Use Your Information</h2>
               <p>
-                The information we collect is strictly used to operate, maintain, and improve the ErlangLabs platform. This includes:
+                The information we collect is strictly used to operate, maintain, and improve the Erlang Labs platform. This includes:
               </p>
               <ul className="ml-6 list-disc flex flex-col gap-2">
                 <li>Executing outbound and inbound AI voice campaigns on your behalf.</li>

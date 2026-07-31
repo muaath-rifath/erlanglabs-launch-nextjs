@@ -5,24 +5,24 @@ import ContactForm from "../components/ContactForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | ErlangLabs",
-  description: "Contact the ErlangLabs team about AI voice agents, Agent Studio, and early business calling workflows.",
+  title: "Contact Us | Erlang Labs",
+  description: "Contact the Erlang Labs team about AI voice agents, Agent Studio, and early business calling workflows.",
   alternates: {
     canonical: "https://www.erlanglabs.com/contact",
   },
   openGraph: {
-    title: "Contact Us | ErlangLabs",
-    description: "Contact ErlangLabs about AI voice agents and business calling workflows.",
+    title: "Contact Us | Erlang Labs",
+    description: "Contact Erlang Labs about AI voice agents and business calling workflows.",
     url: "https://www.erlanglabs.com/contact",
-    siteName: "ErlangLabs",
+    siteName: "Erlang Labs",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     site: "@erlanglabs",
-    title: "Contact Us | ErlangLabs",
-    description: "Get in touch with the ErlangLabs team to discuss your enterprise AI voice needs.",
+    title: "Contact Us | Erlang Labs",
+    description: "Get in touch with the Erlang Labs team to discuss your enterprise AI voice needs.",
   },
 };
 
@@ -47,5 +47,3 @@ export default function ContactPage() {
     </>
   );
 }
-
-

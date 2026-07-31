@@ -191,7 +191,7 @@ export async function POST(request: Request) {
         await resend.emails.send({
           from: process.env.RESEND_FROM_EMAIL ?? 'contact@erlanglabs.com',
           to:   email,
-          subject: 'Thank you for reaching out to ErlangLabs',
+          subject: 'Thank you for reaching out to Erlang Labs',
           html: `
             <!DOCTYPE html>
             <html>
@@ -252,10 +252,10 @@ export async function POST(request: Request) {
                   <h1>Hi ${firstName || 'there'},</h1>
                   <p>Thank you for getting in touch with us! We have received your inquiry regarding our enterprise AI voice solutions.</p>
                   <p>Our team is currently reviewing your message. We aim to respond to all inquiries within 24 hours to discuss how we can help scale your infrastructure.</p>
-                  <p style="margin-bottom: 0;">Best regards,<br/><strong style="color: #FF5B0A;">The ErlangLabs Team</strong></p>
+                  <p style="margin-bottom: 0;">Best regards,<br/><strong style="color: #FF5B0A;">The Erlang Labs Team</strong></p>
                 </div>
                 <div class="footer">
-                  &copy; ${new Date().getFullYear()} ErlangLabs. All rights reserved.
+                  &copy; ${new Date().getFullYear()} Erlang Labs. All rights reserved.
                 </div>
               </div>
             </body>

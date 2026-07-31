@@ -217,7 +217,7 @@ export async function POST(request: Request) {
         await resend.emails.send({
           from: process.env.RESEND_FROM_EMAIL ?? 'contact@erlanglabs.com',
           to:   email,
-          subject: "You're on the ErlangLabs waitlist!",
+        subject: "You're on the Erlang Labs waitlist!",
           html: `
             <!DOCTYPE html>
             <html>
@@ -276,12 +276,12 @@ export async function POST(request: Request) {
                 </div>
                 <div class="content">
                   <h1>Hi ${firstName || 'there'},</h1>
-                  <p>You're officially on the waitlist for ErlangLabs early access! We have received your details.</p>
+                  <p>You're officially on the waitlist for Erlang Labs early access! We have received your details.</p>
                   <p>We are rolling out access gradually and our team will be in touch with you shortly to discuss your use case and get you onboarded.</p>
-                  <p style="margin-bottom: 0;">Best regards,<br/><strong style="color: #FF5B0A;">The ErlangLabs Team</strong></p>
+                  <p style="margin-bottom: 0;">Best regards,<br/><strong style="color: #FF5B0A;">The Erlang Labs Team</strong></p>
                 </div>
                 <div class="footer">
-                  &copy; ${new Date().getFullYear()} ErlangLabs. All rights reserved.
+                  &copy; ${new Date().getFullYear()} Erlang Labs. All rights reserved.
                 </div>
               </div>
             </body>
