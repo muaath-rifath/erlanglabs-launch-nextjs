@@ -1,0 +1,6 @@
+import { Metadata } from "next";
+import SolutionPage from "@/app/components/SolutionPage";
+
+export const metadata: Metadata = { title: "AI Recruitment Phone Screening | ErlangLabs", description: "Use AI voice agents for structured first-round recruitment screening. Collect experience, availability, and role-fit context before human review.", alternates: { canonical: "https://www.erlanglabs.com/agents/recruitment-screening" } };
+
+export default function RecruitmentScreeningPage() { return <SolutionPage variant="recruitment" title="More consistent candidate screens." description="Run focused first-round phone screens and give hiring teams a consistent candidate record to review." problem="Hiring teams need signal early, without turning every first conversation into a full interview." mechanism="Define the role criteria and the fields that matter for the first screen. The agent asks focused questions about experience, availability, and expectations, then leaves the decision with your hiring team." fields={["Experience", "Availability", "Compensation", "Role fit"]} outcome="The candidate has relevant experience, can start within four weeks, and wants to continue to a technical interview." />; }
