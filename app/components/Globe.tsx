@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
@@ -26,40 +26,45 @@ export default function Globe() {
     }
   }, []);
 
-  const globeConfig = {
-    pointSize: 1.5,
-    globeColor: isDarkMode ? "#2a2a2a" : "#c8c8c8", // Aluminum metallic gray
-    globeOpacity: 0.95,
-    showAtmosphere: true,
-    atmosphereColor: "#eb4700",
-    atmosphereAltitude: 0.08,
-    emissive: "#000000", // No emissive glow to allow shadows and specular highlights to work
-    emissiveIntensity: 0.1,
-    shininess: isDarkMode ? 0.9 : 80, // High shininess for skeuomorphic metallic reflection
-    polygonColor: isDarkMode ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.6)", // Dark etched lines on the metallic surface
-    ambientLight: isDarkMode ? "#ffffff" : "#cccccc", // Slightly lower ambient to enhance 3D shading
-    directionalLeftLight: "#ffffff",
-    directionalTopLight: "#ffffff",
-    pointLight: "#ff7b40",
-    arcTime: 1000,
-    arcLength: 0.9,
-    rings: 1,
-    maxRings: 3,
-    initialPosition: { lat: 22.3193, lng: 114.1694 },
-    autoRotate: true,
-    autoRotateSpeed: 0.5,
-  };
-  const colors = ["#ff7b40", "#eb4700", "#ffb785"];
-  const sampleArcs = [
-    {
-      order: 1,
-      startLat: -19.885592,
-      startLng: -43.951191,
-      endLat: -22.9068,
-      endLng: -43.1729,
-      arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
-    },
+  const globeConfig = useMemo(
+    () => ({
+      pointSize: 1.5,
+      globeColor: isDarkMode ? "#2a2a2a" : "#c8c8c8", // Aluminum metallic gray
+      globeOpacity: 0.95,
+      showAtmosphere: true,
+      atmosphereColor: "#eb4700",
+      atmosphereAltitude: 0.08,
+      emissive: "#000000", // No emissive glow to allow shadows and specular highlights to work
+      emissiveIntensity: 0.1,
+      shininess: isDarkMode ? 0.9 : 80, // High shininess for skeuomorphic metallic reflection
+      polygonColor: isDarkMode ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.6)", // Dark etched lines on the metallic surface
+      ambientLight: isDarkMode ? "#ffffff" : "#cccccc", // Slightly lower ambient to enhance 3D shading
+      directionalLeftLight: "#ffffff",
+      directionalTopLight: "#ffffff",
+      pointLight: "#ff7b40",
+      arcTime: 1000,
+      arcLength: 0.9,
+      rings: 1,
+      maxRings: 3,
+      initialPosition: { lat: 22.3193, lng: 114.1694 },
+      autoRotate: true,
+      autoRotateSpeed: 0.5,
+    }),
+    [isDarkMode],
+  );
+
+  const sampleArcs = useMemo(() => {
+    const colors = ["#ff7b40", "#eb4700", "#ffb785"];
+    return [
+      {
+        order: 1,
+        startLat: -19.885592,
+        startLng: -43.951191,
+        endLat: -22.9068,
+        endLng: -43.1729,
+        arcAlt: 0.1,
+        color: colors[Math.floor(Math.random() * colors.length)],
+      },
     {
       order: 1,
       startLat: 28.6139,
@@ -67,7 +72,7 @@ export default function Globe() {
       endLat: 3.139,
       endLng: 101.6869,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 1,
@@ -76,7 +81,7 @@ export default function Globe() {
       endLat: -1.303396,
       endLng: 36.852443,
       arcAlt: 0.5,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 2,
@@ -85,7 +90,7 @@ export default function Globe() {
       endLat: 35.6762,
       endLng: 139.6503,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 2,
@@ -94,7 +99,7 @@ export default function Globe() {
       endLat: 3.139,
       endLng: 101.6869,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 2,
@@ -103,7 +108,7 @@ export default function Globe() {
       endLat: 36.162809,
       endLng: -115.119411,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 3,
@@ -112,7 +117,7 @@ export default function Globe() {
       endLat: 22.3193,
       endLng: 114.1694,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 3,
@@ -121,7 +126,7 @@ export default function Globe() {
       endLat: 40.7128,
       endLng: -74.006,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 3,
@@ -130,7 +135,7 @@ export default function Globe() {
       endLat: 51.5072,
       endLng: -0.1276,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 4,
@@ -139,7 +144,7 @@ export default function Globe() {
       endLat: -15.595412,
       endLng: -56.05918,
       arcAlt: 0.5,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 4,
@@ -148,7 +153,7 @@ export default function Globe() {
       endLat: 22.3193,
       endLng: 114.1694,
       arcAlt: 0.7,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 4,
@@ -157,7 +162,7 @@ export default function Globe() {
       endLat: 48.8566,
       endLng: -2.3522,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 5,
@@ -166,7 +171,7 @@ export default function Globe() {
       endLat: 51.5072,
       endLng: -0.1276,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 5,
@@ -175,7 +180,7 @@ export default function Globe() {
       endLat: -33.8688,
       endLng: 151.2093,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 5,
@@ -184,7 +189,7 @@ export default function Globe() {
       endLat: 48.8566,
       endLng: -2.3522,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 6,
@@ -193,7 +198,7 @@ export default function Globe() {
       endLat: 1.094136,
       endLng: -63.34546,
       arcAlt: 0.7,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 6,
@@ -202,7 +207,7 @@ export default function Globe() {
       endLat: 35.6762,
       endLng: 139.6503,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 6,
@@ -211,7 +216,7 @@ export default function Globe() {
       endLat: 51.5072,
       endLng: -0.1276,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: colors[Math.floor(Math.random() * colors.length)],
     },
     {
       order: 7,
@@ -411,7 +416,8 @@ export default function Globe() {
       arcAlt: 0.3,
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
-  ];
+    ];
+  }, []);
 
   return (
     <div className="absolute inset-0 pointer-events-none">

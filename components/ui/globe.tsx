@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
 import { useThree, Canvas, extend } from "@react-three/fiber";
@@ -260,13 +260,16 @@ export function WebGLRendererConfig() {
 
 export function World(props: WorldProps) {
   const { globeConfig } = props;
-  const scene = new Scene();
-  scene.fog = new Fog(0x000000, 400, 2000);
+  const scene = useMemo(() => {
+    const nextScene = new Scene();
+    nextScene.fog = new Fog(0x000000, 400, 2000);
+    return nextScene;
+  }, []);
   return (
     <Canvas 
       scene={scene} 
       camera={{ position: [0, 0, cameraZ], fov: 50 }}
-      gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true }}
+      gl={{ antialias: true, alpha: true }}
     >
       <WebGLRendererConfig />
       <ambientLight color={globeConfig.ambientLight} intensity={1} />

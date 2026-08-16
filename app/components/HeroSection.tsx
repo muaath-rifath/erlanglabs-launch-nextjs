@@ -21,7 +21,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="pointer-events-none relative mt-12 hidden aspect-square w-full max-w-[400px] items-center justify-center lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:my-auto lg:mt-0 lg:flex lg:h-[500px] lg:w-[500px] lg:max-w-none lg:translate-y-8 xl:-right-10 xl:h-[600px] xl:w-[600px]">
+      <div className="pointer-events-none relative mt-12 hidden aspect-square w-full max-w-[400px] items-center justify-center lg:absolute lg:top-0 lg:right-0 lg:bottom-0 lg:my-auto lg:mt-0 lg:flex lg:h-[500px] lg:w-[500px] lg:max-w-none xl:-right-10 xl:h-[600px] xl:w-[600px]">
         <div className="absolute inset-0 scale-90 rounded-full bg-gradient-to-tr from-primary-container/20 to-primary/0 blur-3xl" />
         <div className="relative h-full w-full"><Globe /></div>
       </div>
