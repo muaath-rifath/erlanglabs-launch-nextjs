@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { IconBrandFacebook, IconBrandGithub, IconBrandInstagram, IconBrandX } from "@tabler/icons-react";
 
 export default function Footer() {
   return (
@@ -11,6 +12,12 @@ export default function Footer() {
           <p className="max-w-xs font-inter text-sm leading-6 text-secondary">
             Contextual AI voice agents for business conversations and structured outcomes.
           </p>
+          <nav aria-label="Social media" className="mt-2 flex items-center gap-2">
+            <a href="https://instagram.com/erlanglabs" target="_blank" rel="noreferrer" aria-label="Erlang Labs on Instagram" className="social-link"><IconBrandInstagram size={19} stroke={1.7} /></a>
+            <a href="https://x.com/erlanglabs" target="_blank" rel="noreferrer" aria-label="Erlang Labs on X" className="social-link"><IconBrandX size={18} stroke={1.7} /></a>
+            <a href="https://facebook.com/erlanglabs" target="_blank" rel="noreferrer" aria-label="Erlang Labs on Facebook" className="social-link"><IconBrandFacebook size={19} stroke={1.7} /></a>
+            <a href="https://github.com/erlanglabs" target="_blank" rel="noreferrer" aria-label="Erlang Labs on GitHub" className="social-link"><IconBrandGithub size={19} stroke={1.7} /></a>
+          </nav>
           <p className="mt-2 font-mono text-[11px] uppercase tracking-[.1em] text-muted">
             © {new Date().getFullYear()} Erlang Labs · Pre-launch
           </p>
@@ -21,6 +28,7 @@ export default function Footer() {
           <Link href="/agent-studio" className="footer-link">Agent Studio</Link>
           <Link href="/agents" className="footer-link">Voice Agents</Link>
           <Link href="/knowledge-base" className="footer-link">Knowledge Base</Link>
+          <Link href="/plans" className="footer-link">Plans & pricing</Link>
         </nav>
 
         <nav aria-label="Solutions navigation" className="flex flex-col gap-2">
