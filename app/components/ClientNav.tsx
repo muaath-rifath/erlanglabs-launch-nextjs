@@ -43,6 +43,8 @@ export function ClientNav() {
       <Link href="/contact" className={`nav-link nav-pill ${isActive("/contact") ? "nav-pill--active nav-link--active" : ""}`}>Contact</Link>
     </nav>
 
+    <Link href="/early-access" className="btn-primary ml-auto !hidden lg:!inline-flex">Get early access</Link>
+
     <button type="button" className="ml-auto grid h-10 w-10 place-items-center rounded-full border border-surface-border text-on-surface lg:hidden" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Toggle navigation" aria-expanded={mobileOpen}>
       <span className="relative block h-4 w-4"><i className={`absolute left-0 top-[3px] h-px w-4 bg-current transition-transform ${mobileOpen ? "translate-y-[5px] rotate-45" : ""}`} /><i className={`absolute left-0 top-[8px] h-px w-4 bg-current transition-opacity ${mobileOpen ? "opacity-0" : ""}`} /><i className={`absolute bottom-[2px] left-0 h-px w-4 bg-current transition-transform ${mobileOpen ? "-translate-y-[5px] -rotate-45" : ""}`} /></span>
     </button>
